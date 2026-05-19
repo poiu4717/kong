@@ -38,6 +38,7 @@ proxies:
   - {name: 土耳其1, server: 103.181.164.49, port: 28736, type: socks5, username: 1x7x3zazkemobmiyaip_g-TR_f-1005_sid-736683790_l-30, password: 197836245}
   - {name: 土耳其2, server: 103.181.164.49, port: 28736, type: socks5, username: 1x7x3zazkemobmiyaip_g-TR_f-1005_sid-825753782_l-30, password: 197836245}
   - {name: 土耳其3, server: 103.181.164.49, port: 28736, type: socks5, username: 1x7x3zazkemobmiyaip_g-TR_f-1005_sid-803756877_l-30, password: 197836245}
+  - {name: 土耳其4, server: 103.181.164.49, port: 28736, type: socks5, username: 1x7x3zazkemobmiyaip_g-TR_f-1005_sid-605005440_l-30, password: 197836245}
   - {name: 土耳其5, server: 103.181.164.49, port: 28736, type: socks5, username: 1x7x3zazkemobmiyaip_g-TR_f-1005_sid-667528163_l-30, password: 197836245}
   - {name: 巴西1, server: 103.181.164.49, port: 28736, type: socks5, username: 1x7x3zazkemobmiyaip_g-BR_f-1005_sid-243849588_l-30, password: 197836245}
   - {name: 巴西2, server: 103.181.164.49, port: 28736, type: socks5, username: 1x7x3zazkemobmiyaip_g-BR_f-1005_sid-946861026_l-30, password: 197836245}
