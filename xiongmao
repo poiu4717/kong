@@ -1,0 +1,170 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: 127.0.0.1:9090
+proxies:
+  - name: 土耳其01
+    type: socks5
+    server: 106.75.152.119
+    port: "1000"
+    username: 7b8587ae-fb8354c4-f416e9
+    password: wifi-tr---
+    udp: true
+  - name: 土耳其02
+    type: socks5
+    server: 106.75.152.119
+    port: "1001"
+    username: 7b8587ae-fb8354c4-a4c40b
+    password: wifi-tr---
+    udp: true
+  - name: 土耳其03
+    type: socks5
+    server: 106.75.152.119
+    port: "1002"
+    username: 7b8587ae-fb8354c4-41a2a8
+    password: wifi-tr---
+    udp: true
+  - name: 土耳其04
+    type: socks5
+    server: 106.75.152.119
+    port: "1003"
+    username: 7b8587ae-fb8354c4-ecf7db
+    password: wifi-tr---
+    udp: true
+  - name: 土耳其05
+    type: socks5
+    server: 106.75.152.119
+    port: "1004"
+    username: 7b8587ae-fb8354c4-f31b40
+    password: wifi-tr---
+    udp: true
+  - name: 土耳其06
+    type: socks5
+    server: 106.75.152.119
+    port: "1005"
+    username: 7b8587ae-fb8354c4-a252b5
+    password: wifi-tr---
+    udp: true
+  - name: 土耳其07
+    type: socks5
+    server: 106.75.152.119
+    port: "1006"
+    username: 7b8587ae-fb8354c4-6cfd27
+    password: wifi-tr---
+    udp: true
+  - name: 土耳其08
+    type: socks5
+    server: 106.75.152.119
+    port: "1007"
+    username: 7b8587ae-fb8354c4-a0b284
+    password: wifi-tr---
+    udp: true
+  - name: 土耳其09
+    type: socks5
+    server: 106.75.152.119
+    port: "1008"
+    username: 7b8587ae-fb8354c4-c54390
+    password: wifi-tr---
+    udp: true
+  - name: 土耳其10
+    type: socks5
+    server: 106.75.152.119
+    port: "1009"
+    username: 7b8587ae-fb8354c4-490119
+    password: wifi-tr---
+    udp: true
+  - name: 土耳其11
+    type: socks5
+    server: 106.75.152.119
+    port: "1010"
+    username: 7b8587ae-fb8354c4-d7a438
+    password: wifi-tr---
+    udp: true
+  - name: 土耳其12
+    type: socks5
+    server: 106.75.152.119
+    port: "1006"
+    username: 7b8587ae-fb8354c4-e4b9ce
+    password: wifi-tr---
+    udp: true
+  - name: 土耳其13
+    type: socks5
+    server: 106.75.152.119
+    port: "1006"
+    username: 7b8587ae-fb8354c4-226e6e
+    password: wifi-tr---
+    udp: true
+  - name: 土耳其14
+    type: socks5
+    server: 106.75.152.119
+    port: "1010"
+    username: 7b8587ae-fb8354c4-2f1755
+    password: wifi-tr---
+    udp: true
+  - name: 土耳其15
+    type: socks5
+    server: 106.75.152.119
+    port: "1005"
+    username: 7b8587ae-fb8354c4-077802
+    password: wifi-tr---
+    udp: true
+proxy-providers:
+          机场:
+            type: http
+            url: https://subs.feituyun.xyz/sub?target=clash&url=https%3A%2F%2Fjjsubmarines.com%2Fmembers%2Fgetsub.php%3Fservice%3D840570%26id%3D5ba6d055-3a89-4c6b-8b22-1fb50b43dc3b&insert=false&filename=%E9%A3%9E%E5%85%94%E4%BA%91&emoji=true&list=false&tfo=false&scv=true&fdn=false&sort=false&new_name=true
+            interval: 86400
+            path: ./proxy_provider/jc.yaml
+            udp: false
+            health-check:
+              enable: true
+              interval: 600
+              url: http://www.gstatic.com/generate_204
+proxy-groups:
+  - name: 主线路
+    proxies:
+      - DIRECT
+      - 谷歌华为
+    use:
+      - 机场
+    type: select
+    disable-udp: true
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  - name: 谷歌华为
+    proxies:
+      - 土耳其01
+      - 土耳其02
+      - 土耳其03
+      - 土耳其04
+      - 土耳其05
+      - 土耳其06
+      - 土耳其07
+      - 土耳其08
+      - 土耳其09
+      - 土耳其10
+      - 土耳其11
+      - 土耳其12
+      - 土耳其13
+      - 土耳其14
+      - 土耳其15
+    type: select
+    disable-udp: false
+    health-check:
+      enable: false
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+rules:
+  - DOMAIN,play.googleapis.com,谷歌华为
+  - DOMAIN,myaccount.google.com,谷歌华为
+  - DOMAIN-KEYWORD,accounts.google.com,谷歌华为
+  - DOMAIN,play-fe.googleapis.com,谷歌华为
+  - DOMAIN,sspanel.net,谷歌华为
+  - DOMAIN,payments-pa.googleapis.com,谷歌华为
+  - DOMAIN-KEYWORD,orders-dra.iap.cloud.huawei,谷歌华为
+  - DOMAIN-SUFFIX,acs.cupdapp.cn,谷歌华为
+  - DOMAIN-KEYWORD,iap-pay-dra.cloud.huawei,谷歌华为
+  - MATCH,主线路
