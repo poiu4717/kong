@@ -172,6 +172,29 @@ proxies:
     skip-cert-verify: false
     network: tcp
     udp: true
+  - name: 日本
+    type: vmess
+    server: 45.192.203.15
+    port: 22243
+    uuid: bde59cc8-0c93-433c-9c39-302dc3876f04
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: tcp
+    udp: true
+  - name: 香港
+    type: vless
+    server: zx.poiu4717.cc.cd
+    port: 37795
+    uuid: a98cca94-9f80-4686-9834-4f193dc1f762
+    tls: false
+    servername: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
 proxy-providers:
           机场:
             type: http
@@ -194,6 +217,8 @@ proxy-groups:
       - JMS-840570@c27s4.portablesubmarines.com:15206
       - JMS-840570@c27s5.portablesubmarines.com:15206
       - JMS-840570@c27s801.portablesubmarines.com:15206
+      - 日本
+      - 香港
     use:
       - 机场
     type: select
