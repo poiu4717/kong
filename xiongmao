@@ -195,17 +195,7 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-proxy-providers:
-          机场:
-            type: http
-            url: https://ccc.poiu4717.cc.cd/c/jvYxSWM
-            interval: 86400
-            path: ./proxy_provider/jc.yaml
-            udp: false
-            health-check:
-              enable: true
-              interval: 600
-              url: http://www.gstatic.com/generate_204
+
 proxy-groups:
   - name: 主线路
     proxies:
@@ -219,14 +209,7 @@ proxy-groups:
       - JMS-840570@c27s801.portablesubmarines.com:15206
       - 日本
       - 香港
-    use:
-      - 机场
-    type: select
-    disable-udp: true
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
+
   - name: 谷歌华为
     proxies:
       - 土耳其01
