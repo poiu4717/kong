@@ -113,7 +113,7 @@ proxies:
 proxy-providers:
           机场:
             type: http
-            url: https://subs.feituyun.xyz/sub?target=clash&url=https%3A%2F%2Fjjsubmarines.com%2Fmembers%2Fgetsub.php%3Fservice%3D840570%26id%3D5ba6d055-3a89-4c6b-8b22-1fb50b43dc3b&insert=false&filename=%E9%A3%9E%E5%85%94%E4%BA%91&emoji=true&list=false&tfo=false&scv=true&fdn=false&sort=false&new_name=true
+            url: https://jmssub.net/members/getsub.php?service=840570&id=5ba6d055-3a89-4c6b-8b22-1fb50b43dc3b
             interval: 86400
             path: ./proxy_provider/jc.yaml
             udp: false
