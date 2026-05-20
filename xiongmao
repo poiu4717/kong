@@ -113,7 +113,7 @@ proxies:
 proxy-providers:
           机场:
             type: http
-            url: https://api.asailor.org/sub?target=clash&url=https%3A%2F%2Fjmssub.net%2Fmembers%2Fgetsub.php%3Fservice%3D840570%26id%3D5ba6d055-3a89-4c6b-8b22-1fb50b43dc3b&config=https%3A%2F%2Fraw.githubusercontent.com%2FAethersailor%2FCustom_OpenClash_Rules%2Frefs%2Fheads%2Fmain%2Fcfg%2FCustom_Clash.ini
+            url: https://ccc.poiu4717.cc.cd/c/jvYxSWM
             interval: 86400
             path: ./proxy_provider/jc.yaml
             udp: false
